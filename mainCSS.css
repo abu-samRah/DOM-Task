@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+body {
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #d9afd9 0%, #97d9e1 100%);
+}
+
+label {
+    font-family: 'Potta One', cursive;
+}
+
+#addSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+}
+
+#addSection--formCreate {
+    width: 100%;
+}
+
+#formCreate--errorMessage {
+    color: rgb(173, 48, 48);
+    display: none;
+}
+
+#addSection--formCreate-createButton {
+    float: right;
+}
+
+#body--horizantalLine {
+    color: black;
+    width: 50%;
+    margin-top: 30px;
+}
+
+#viewSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+#viewSection--searchConatiner,
+#viewSection--listsConatiner {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#viewSection--searchConatiner {
+    display: flex;
+}
+
+#searchConatiner--search {
+    width: 100%;
+    border: none;
+    height: 38px;
+    padding: 1%;
+    outline: none;
+}
+
+#searchConatiner--search:focus {
+    box-shadow: 0 0 15px rgb(54, 136, 158) !important;
+}
+
+#searchConatiner--searchButton {
+    border: none;
+    background-color: #0275d8;
+    color: white;
+    outline: none;
+    padding: 1% 2%;
+}
+
+#searchConatiner--searchButton:hover {
+    background-color: #0000ff;
+}
+
+#viewSection--statDispaly {
+    padding-left: 3%;
+    padding-bottom: 1%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.viewSection--statItem {
+    font-family: 'Potta One', cursive;
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+#viewSection--listsConatiner {
+    margin-top: 1%;
+}
+
+#viewSection--checkboxConatiner {
+    display: flex;
+    align-self: flex-start;
+    margin-top: 15px;
+}
+
+#checkboxConatiner--checkbox {
+    margin: 3px;
+}
+
+#checkboxConatiner--label {
+    font-size: small;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#viewSection--list {
+    list-style-type: none;
+    width: 100%;
+    padding-inline-start: 0;
+}
+
+.viewSection--listItem {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    padding: 1% 2%;
+    margin-bottom: 3%;
+}
+
+.viewSection--listItemDone {
+    background-color: #A8E2FF;
+}
+
+.viewSection--listItemToDo {
+    background-color: #FFA8A8;
+}
+
+.viewSection--listItemContent {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Potta One', cursive;
+    font-size: 13px;
+}
+
+#viewSection--noMatchingResults {
+    background-color: #FFA8A8;
+    border: solid 1px red;
+    color: red;
+    padding: 1%;
+    display: none;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+#viewSection--noToDos {
+    background-color: #A8E2FF;
+    border: solid 1px blue;
+    color: blue;
+    padding: 1%;
+    display: none;
+    margin-bottom: 2%;
+}
